@@ -1,0 +1,201 @@
+.element {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+}
+.number {
+    font-size: 15px;
+}
+.symbol {
+    font-size: 40px;
+    font-weight: bold;
+}
+.name {
+    font-size: 12px;
+}
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(7, 100px);
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: start;
+} 
+
+.category-alkali {
+    background-color: #E8BE68;
+}
+
+.category-alkali-tanah {
+    background-color: #F0DF9B;
+}
+
+.category-lantanida {
+    background-color: #CDBB9B;
+}
+
+.category-transisi {
+    background-color: #E9AA9B;
+}
+
+.category-logam-miskin {
+    background-color: #A9C6DF;
+}
+
+.category-metaloid {
+    background-color: #83C9BA;
+}
+
+.category-nonlogam {
+    background-color: #9ED49D;
+}
+
+.category-gas-mulia {
+    background-color: #C5B0DE;
+}
+
+.category-aktinida {
+    background-color: #E5B4C8;
+}
+
+.element-info {
+    display: none;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.element-info.show {
+    display: block;
+}
+
+.info-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.info-element {
+    width: 230px;
+    min-height: 240px;
+    flex-shrink: 0;
+    background-color: #9ED49D;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info-number {
+    font-size: 22px;
+}
+
+.info-symbol {
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.info-name {
+    font-size: 26px;
+}
+
+.info-category {
+    font-size: 19px;
+}
+
+.info-top {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.info-details {
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+.element {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.element:hover {
+    transform: scale(1.05);
+}
+
+
+/* Mengatur jarak informasi di sebelah kotak unsur */
+.info-top {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.info-details {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.info-details p {
+    margin: 5px 0;
+}
+
+/* Warna setiap label informasi */
+.label-simbol {
+    color: #D96565;
+    font-weight: bold;
+}
+
+.label-nomor {
+    color: #7169D9;
+    font-weight: bold;
+}
+
+.label-massa {
+    color: #559B61;
+    font-weight: bold;
+}
+
+.label-golongan {
+    color: #D6A90C;
+    font-weight: bold;
+}
+
+.label-kategori {
+    color: #A45C27;
+    font-weight: bold;
+}
+
+.label-konfigurasi {
+    color: #5098B9;
+    font-weight: bold;
+}
+
+/* Fakta unik */
+.info-fact {
+    margin-top: 35px;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.info-fact h2 {
+    color: #59851C;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
